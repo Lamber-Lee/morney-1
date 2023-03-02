@@ -1,8 +1,8 @@
 <template>
   <div class="nav-wrapper">
-   <div class="content">
-     Money.vue
-   </div>
+    <div class="content">
+      <p>Money.vue</p>
+    </div>
     <Nav/>
   </div>
 </template>
@@ -15,15 +15,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav-wrapper{
+.nav-wrapper {
   border: 1px solid green;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-.content{
+
+.content {
   border: 1px solid blue;
   overflow: auto;
-flex-grow: 1;
+  flex-grow: 1;
 }
 </style>
