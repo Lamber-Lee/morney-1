@@ -18,7 +18,7 @@ import {Component, Prop} from "vue-property-decorator";
 export default class Types extends Vue{
   type = '-' ;//'-'表示支出，'+' 表示收入；
   @Prop(Number) propA: number | undefined;
-  selectType(type: string) {
+  selectType(type: string): void {
     if (type !== '-' && type !== '+') {
       throw new Error('type is unknown');
     }
