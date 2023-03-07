@@ -19,7 +19,6 @@ import Types from '@/components/Money/Types.vue';
 import FormItem from '@/components/Money/FormItem.vue';
 import Tags from '@/components/Money/Tags.vue';
 import {Component, Watch} from 'vue-property-decorator';
-import tagListModel from '@/models/tagListModel';
 import recordListModel from '@/models/recordListModel';
 const recordList = recordListModel.fetch();
 @Component({
