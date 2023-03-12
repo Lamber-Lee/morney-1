@@ -1,6 +1,9 @@
 const path = require('path')//改成import也可以
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/morney-1-website/'
+      : '/',
   lintOnSave: false,
   chainWebpack: config =>{
     const dir = path.resolve(__dirname,'src/assets/icons')
