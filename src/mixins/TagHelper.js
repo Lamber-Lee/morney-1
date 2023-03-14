@@ -1,9 +1,8 @@
+import { __decorate } from "tslib";
 import Vue from 'vue';
 import Component from 'vue-class-component';
 
-
-@Component
-export class TagHelper extends Vue {
+let TagHelper = class TagHelper extends Vue {
     createTag() {
         const name = window.prompt('请输入标签名');
         if (!name) {
@@ -14,6 +13,10 @@ export class TagHelper extends Vue {
         this.$store.commit('createTag', name);
         window.alert('添加成功');
     }
-}
-
+};
+TagHelper = __decorate([
+    Component
+], TagHelper);
+export { TagHelper };
 export default TagHelper;
+//# sourceMappingURL=TagHelper.js.map
